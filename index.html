@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h2 class="input">Input Date</h2>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+
+      <div class="input-group mb-3">
+        <div>9am</div>
+        <input
+          time="9am"
+          id="input-9am"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-9am"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>10am</div>
+        <input
+          time="10am"
+          id="input-10am"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-10am"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>11am</div>
+        <input
+          time="11am"
+          id="input-11am"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-11am"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>12pm</div>
+        <input
+          time="12pm"
+          id="input-12pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-12pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>1pm</div>
+        <input
+          time="1pm"
+          id="input-1pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-1pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>2pm</div>
+        <input
+          time="2pm"
+          id="input-2pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-2pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>3pm</div>
+        <input
+          time="3pm"
+          id="input-3pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-3pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>4pm</div>
+        <input
+          time="4pm"
+          id="input-4pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-4pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>5pm</div>
+        <input
+          time="5pm"
+          id="input-5pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-5pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>6pm</div>
+        <input
+          time="6pm"
+          id="input-6pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-6pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>7pm</div>
+        <input
+          time="7pm"
+          id="input-7pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-7pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>8pm</div>
+        <input
+          time="8pm"
+          id="input-8pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-8pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div>9pm</div>
+        <input
+          time="9pm"
+          id="input-9pm"
+          type="text"
+          class="form-control"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-9pm"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script>
+      // Cureent Calender date and time
+      var date = moment().format("MMMM Do YYYY, h:mm:ss a");
+      var hour = moment().format("ha");
+      var hourVal = parseInt(hour);
+      var hourIsPm = hour.includes("pm");
+      if (hourIsPm && hourVal !== 12) {
+        hourVal += 12;
+      }
+      var storage = window.localStorage;
+
+      $("input").map((index, elem) => {
+        var elemTime = $(elem).attr("time");
+        var isPm = elemTime.includes("pm");
+        var timeVal = parseInt(elemTime);
+        if (isPm && timeVal !== 12) {
+          timeVal += 12;
+        }
+        var storedVal = storage.getItem($(elem).attr("id"));
+        if (storedVal) {
+          $(elem).val(storedVal);
+        }
+        var isBefore = hourVal > timeVal;
+        if (isBefore) {
+          $(elem).attr("disabled", true);
+        }
+      });
+
+      $("h2").html(date);
+      $(document).ready(
+        setInterval(() => {
+          var newDate = moment().format("MMMM Do YYYY, h:mm:ss a");
+          $("h2").html(newDate);
+        }, 1000)
+      );
+
+      $("button").on("click", (e) => {
+        let buttonId = $(e.target).attr("id");
+        let buttonTime = buttonId.split("-")[1];
+        let inputId = `input-${buttonTime}`;
+        let inputText = $(`#${inputId}`).val();
+        storage.setItem(inputId, inputText);
+      });
+    </script>
+  </body>
+</html>
